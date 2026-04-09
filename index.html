@@ -21,65 +21,71 @@
           id="searchInput"
           placeholder="Search medications…"
           aria-label="Search medications"
+          data-i18n-placeholder="searchPlaceholder"
         />
         <button id="searchBtn" aria-label="Search">🔍</button>
       </div>
 
       <nav class="nav-links">
-        <a href="#categories">Categories</a>
-        <a href="#products">Medications</a>
-        <a href="#about">About</a>
+        <a href="#categories" data-i18n="navCategories">Categories</a>
+        <a href="#products" data-i18n="navMedications">Medications</a>
+        <a href="#about" data-i18n="navAbout">About</a>
       </nav>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="sq">SQ</button>
+      </div>
     </div>
   </header>
 
   <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="container hero-content">
-      <h1>Your Trusted Online Pharmacy</h1>
-      <p>Browse hundreds of medications by type and category. Safe, fast, and reliable.</p>
-      <a href="#categories" class="btn btn-primary">Explore Categories</a>
+      <h1 data-i18n="heroTitle">Your Trusted Online Pharmacy</h1>
+      <p data-i18n="heroDesc">Browse hundreds of medications by type and category. Safe, fast, and reliable.</p>
+      <a href="#categories" class="btn btn-primary" data-i18n="heroBtn">Explore Categories</a>
     </div>
   </section>
 
   <!-- ===== MEDICATION TYPES ===== -->
   <section id="categories" class="section">
     <div class="container">
-      <h2 class="section-title">Types of Medications</h2>
-      <p class="section-subtitle">Filter medications by their dosage form</p>
+      <h2 class="section-title" data-i18n="typesSectionTitle">Types of Medications</h2>
+      <p class="section-subtitle" data-i18n="typesSectionSubtitle">Filter medications by their dosage form</p>
 
       <div class="type-grid" id="typeGrid">
         <button class="type-card active" data-type="all">
           <span class="type-icon">🏥</span>
-          <span class="type-label">All</span>
+          <span class="type-label" data-i18n="typeAll">All</span>
         </button>
         <button class="type-card" data-type="tablet">
           <span class="type-icon">💊</span>
-          <span class="type-label">Tablet</span>
+          <span class="type-label" data-i18n="typeTablet">Tablet</span>
         </button>
         <button class="type-card" data-type="capsule">
           <span class="type-icon">🔵</span>
-          <span class="type-label">Capsule</span>
+          <span class="type-label" data-i18n="typeCapsule">Capsule</span>
         </button>
         <button class="type-card" data-type="syrup">
           <span class="type-icon">🍶</span>
-          <span class="type-label">Syrup</span>
+          <span class="type-label" data-i18n="typeSyrup">Syrup</span>
         </button>
         <button class="type-card" data-type="injectable">
           <span class="type-icon">💉</span>
-          <span class="type-label">Injectable</span>
+          <span class="type-label" data-i18n="typeInjectable">Injectable</span>
         </button>
         <button class="type-card" data-type="drops">
           <span class="type-icon">💧</span>
-          <span class="type-label">Drops</span>
+          <span class="type-label" data-i18n="typeDrops">Drops</span>
         </button>
         <button class="type-card" data-type="cream">
           <span class="type-icon">🧴</span>
-          <span class="type-label">Cream / Gel</span>
+          <span class="type-label" data-i18n="typeCream">Cream / Gel</span>
         </button>
         <button class="type-card" data-type="powder">
           <span class="type-icon">🫙</span>
-          <span class="type-label">Powder</span>
+          <span class="type-label" data-i18n="typePowder">Powder</span>
         </button>
       </div>
     </div>
@@ -88,49 +94,49 @@
   <!-- ===== CATEGORY BADGES ===== -->
   <section class="section bg-light">
     <div class="container">
-      <h2 class="section-title">Medication Categories</h2>
-      <p class="section-subtitle">Browse by therapeutic area</p>
+      <h2 class="section-title" data-i18n="catSectionTitle">Medication Categories</h2>
+      <p class="section-subtitle" data-i18n="catSectionSubtitle">Browse by therapeutic area</p>
 
       <div class="category-grid">
         <a href="#products" class="category-card" data-category="pain-relief">
           <span class="cat-icon">🩹</span>
-          <h3>Pain Relief</h3>
-          <p>Analgesics, anti-inflammatory</p>
+          <h3 data-i18n="catPainRelief">Pain Relief</h3>
+          <p data-i18n="catPainReliefDesc">Analgesics, anti-inflammatory</p>
         </a>
         <a href="#products" class="category-card" data-category="antibiotics">
           <span class="cat-icon">🦠</span>
-          <h3>Antibiotics</h3>
-          <p>Bacterial infection treatments</p>
+          <h3 data-i18n="catAntibiotics">Antibiotics</h3>
+          <p data-i18n="catAntibioticsDesc">Bacterial infection treatments</p>
         </a>
         <a href="#products" class="category-card" data-category="vitamins">
           <span class="cat-icon">🌿</span>
-          <h3>Vitamins &amp; Supplements</h3>
-          <p>Daily health essentials</p>
+          <h3 data-i18n="catVitamins">Vitamins &amp; Supplements</h3>
+          <p data-i18n="catVitaminsDesc">Daily health essentials</p>
         </a>
         <a href="#products" class="category-card" data-category="cardiovascular">
           <span class="cat-icon">❤️</span>
-          <h3>Cardiovascular</h3>
-          <p>Heart &amp; blood pressure</p>
+          <h3 data-i18n="catCardiovascular">Cardiovascular</h3>
+          <p data-i18n="catCardiovascularDesc">Heart &amp; blood pressure</p>
         </a>
         <a href="#products" class="category-card" data-category="diabetes">
           <span class="cat-icon">🩸</span>
-          <h3>Diabetes</h3>
-          <p>Blood sugar management</p>
+          <h3 data-i18n="catDiabetes">Diabetes</h3>
+          <p data-i18n="catDiabetesDesc">Blood sugar management</p>
         </a>
         <a href="#products" class="category-card" data-category="allergy">
           <span class="cat-icon">🤧</span>
-          <h3>Allergy &amp; Cold</h3>
-          <p>Antihistamines, decongestants</p>
+          <h3 data-i18n="catAllergy">Allergy &amp; Cold</h3>
+          <p data-i18n="catAllergyDesc">Antihistamines, decongestants</p>
         </a>
         <a href="#products" class="category-card" data-category="digestive">
           <span class="cat-icon">🫁</span>
-          <h3>Digestive Health</h3>
-          <p>Antacids, probiotics</p>
+          <h3 data-i18n="catDigestive">Digestive Health</h3>
+          <p data-i18n="catDigestiveDesc">Antacids, probiotics</p>
         </a>
         <a href="#products" class="category-card" data-category="skincare">
           <span class="cat-icon">🧖</span>
-          <h3>Skin Care</h3>
-          <p>Dermatology treatments</p>
+          <h3 data-i18n="catSkincare">Skin Care</h3>
+          <p data-i18n="catSkincareDesc">Dermatology treatments</p>
         </a>
       </div>
     </div>
@@ -140,7 +146,7 @@
   <section id="products" class="section">
     <div class="container">
       <div class="products-header">
-        <h2 class="section-title">Medications</h2>
+        <h2 class="section-title" data-i18n="productsSectionTitle">Medications</h2>
         <span id="resultsCount" class="results-count"></span>
       </div>
 
@@ -148,7 +154,7 @@
         <!-- Rendered by script.js -->
       </div>
 
-      <p class="no-results" id="noResults" style="display:none;">
+      <p class="no-results" id="noResults" style="display:none;" data-i18n="noResultsMsg">
         No medications found. Try a different search or filter.
       </p>
     </div>
@@ -158,31 +164,31 @@
   <section id="about" class="section bg-light">
     <div class="container about-inner">
       <div class="about-text">
-        <h2>About BranatorJaime Pharmacy</h2>
-        <p>
+        <h2 data-i18n="aboutTitle">About BranatorJaime Pharmacy</h2>
+        <p data-i18n="aboutDesc">
           We provide fast, safe, and affordable access to a wide range of
           prescription and over-the-counter medications. Our licensed pharmacists
           review every order to ensure your health and safety.
         </p>
         <ul class="about-features">
-          <li>✅ Licensed pharmacists on call 24/7</li>
-          <li>✅ Secure &amp; discreet delivery</li>
-          <li>✅ Over 500 medications in stock</li>
-          <li>✅ Easy prescription upload</li>
+          <li data-i18n="aboutFeature1">✅ Licensed pharmacists on call 24/7</li>
+          <li data-i18n="aboutFeature2">✅ Secure &amp; discreet delivery</li>
+          <li data-i18n="aboutFeature3">✅ Over 500 medications in stock</li>
+          <li data-i18n="aboutFeature4">✅ Easy prescription upload</li>
         </ul>
       </div>
       <div class="about-stats">
         <div class="stat-box">
           <span class="stat-number">500+</span>
-          <span class="stat-label">Medications</span>
+          <span class="stat-label" data-i18n="statMedications">Medications</span>
         </div>
         <div class="stat-box">
           <span class="stat-number">50K+</span>
-          <span class="stat-label">Happy Patients</span>
+          <span class="stat-label" data-i18n="statPatients">Happy Patients</span>
         </div>
         <div class="stat-box">
           <span class="stat-number">24/7</span>
-          <span class="stat-label">Support</span>
+          <span class="stat-label" data-i18n="statSupport">Support</span>
         </div>
       </div>
     </div>
@@ -191,11 +197,11 @@
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; 2026 BranatorJaime Pharmacy. All rights reserved.</p>
+      <p data-i18n="footerCopy">&copy; 2026 BranatorJaime Pharmacy. All rights reserved.</p>
       <nav class="footer-nav">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Contact Us</a>
+        <a href="#" data-i18n="footerPrivacy">Privacy Policy</a>
+        <a href="#" data-i18n="footerTerms">Terms of Service</a>
+        <a href="#" data-i18n="footerContact">Contact Us</a>
       </nav>
     </div>
   </footer>
